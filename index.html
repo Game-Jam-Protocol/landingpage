@@ -1,57 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Game Jam Protocol</title>
+    <meta
+      name="description"
+      content="Game Jam Protocol - The Future of Gaming Assets"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Game Jam Protocol</title>
-  <meta name="description" content="Game Jam Protocol - The Future of Gaming Assets">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Game Jam Protocol" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gamejamprotocol.com" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="Game Jam Protocol">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gamejamprotocol.com">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Mono:regular"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<body>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <!-- Add your site or application content here -->
-  <h1>Game Jam Protocol</h1>
-  <h2>The Future of Gaming Assets</h2>
-  <p>Sign up now to be part of the NFT gaming evolution!</p>
-  <form name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <body>
+    <!-- Add your site or application content here -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXY1VGH40M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <header class="header">
+      <div class="marquee">
+        <div class="marquee__inner">
+          <p class="marquee__line">
+            Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam
+            Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp
+          </p>
+          <p class="marquee__line">
+            Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam
+            Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp
+          </p>
+        </div>
+      </div>
+    </header>
+    
+      <div class="wrapper">
+        <main class="main">
+          <div class="images-section-container">
+            <div class="girl-image"></div>
+            <div id="top-image" class="top-image"></div>
+            <div id="back-image" class="back-image"></div>
+          </div>
+          <section class="form-section">
+            <h1>The Future of Gaming Assets</h1>
+            <h2>Game Jam Protocol</h2>
+            <p>Sign up now to be part of the NFT gaming evolution!</p>
+            <form name="contact" netlify>
+              <p class="field">
+                <!-- <input class="correct uncorrect hover-target" -->
+                <input
+                  class="hover-target"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                />
+                <label for="name">Name</label>
+                <span class="error-string"> Please enter correct name </span>
+              </p>
+              <p class="field">
+                <input
+                  class="hover-target"
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <label for="email">Email</label>
+                <span class="error-string">
+                  Please enter your email in right format
+                </span>
+              </p>
+              <p>
+                <button class="form-button hover-target" type="submit">
+                  Send
+                </button>
+              </p>
+            </form>
+          </section>
 
-    gtag('config', 'G-PXY1VGH40M');
-  </script>
-</body>
+          <div class="cursor" id="cursor"></div>
+          <div class="cursor2" id="cursor2"></div>
+          <div class="cursor3" id="cursor3"></div>
+        </main>
+      </div>
+    
+    <footer class="footer">
+      <div class="marquee">
+        <div class="marquee__inner">
+          <p class="marquee__line marquee__line_reverse">
+            Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam
+            Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp
+          </p>
+          <p class="marquee__line marquee__line_reverse">
+            Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam
+            Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp Game Jam Protocol &nbsp &nbsp
+          </p>
+        </div>
+      </div>
+    </footer>
 
+    <div class="modal-registration">
+      <h2>Thank you for submission!</h2>
+      <button
+        class="modal-close hover-target"
+        aria-label="close modal"
+        tabindex="0"
+      ></button>
+    </div>
+    <div class="overlay"></div>
+    <div class="cursor-overlay"></div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PXY1VGH40M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PXY1VGH40M");
+    </script>
+  </body>
 </html>
