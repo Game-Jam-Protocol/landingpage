@@ -25,18 +25,18 @@ $(document).ready(function () {
     });
 
     // modal
-    $(".form-button").click(function(e){
-        e.preventDefault();
-        console.log('click');
-        $(".modal-registration").css("display", "block");
-        $(".overlay").css("display", "block");
-    })
-    $(".modal-close").click(function(e){
-        e.preventDefault();
-        console.log('click');
-        $(".modal-registration").css("display", "none");
-        $(".overlay").css("display", "none");
-    })
+    // $(".form-button").click(function(e){
+    //     e.preventDefault();
+    //     console.log('click');
+    //     $(".modal-registration").css("display", "block");
+    //     $(".overlay").css("display", "block");
+    // })
+    // $(".modal-close").click(function(e){
+    //     e.preventDefault();
+    //     console.log('click');
+    //     $(".modal-registration").css("display", "none");
+    //     $(".overlay").css("display", "none");
+    // })
 });
 
 (function ($) {
